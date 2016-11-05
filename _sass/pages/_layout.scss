@@ -1,0 +1,113 @@
+/* LAYOUT CSS */
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+}
+
+.cover {
+    background-color: $background-color;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    min-height: 400px;
+    // padding: 30px 15px 20px;
+    z-index: 1;
+    @include media-query($small-screen) {
+        background-position: center;
+        // padding: 30px;
+    }
+    @include media-query($medium-screen) {
+        height: 100vh;
+        position: initial;
+        width: 100%;
+    }
+}
+
+.cover-card {
+    background: rgba(204, 218, 255, 1);
+    background: -moz-linear-gradient(-45deg, rgba(204, 218, 255, 1) 0%, rgba(168, 249, 255, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(204, 218, 255, 1)), color-stop(100%, rgba(168, 249, 255, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(204, 218, 255, 1) 0%, rgba(168, 249, 255, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(204, 218, 255, 1) 0%, rgba(168, 249, 255, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(204, 218, 255, 1) 0%, rgba(168, 249, 255, 1) 100%);
+    background: linear-gradient(135deg, rgba(204, 218, 255, 1) 0%, rgba(168, 249, 255, 1) 100%);
+    color: $text-color;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    .avatar {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 10px;
+    }
+    .author_name {
+        display: block;
+        color: #002561;
+        font-size: 1.75em;
+    }
+    .author_job {
+        display: block;
+        color: #002561;
+        font-size: 0.8em;
+        font-weight: 700;
+        margin: -5px auto 10px;
+    }
+    .author_bio {
+        font-size: 90%;
+        display: block;
+    }
+    @include media-query($medium-screen) {
+        text-align: left;
+        margin: 0 auto;
+        padding-left: 50px;
+    }
+    @include media-query($small-screen) {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+}
+
+.social-links {
+    margin-top: 0.5em;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 1em;
+            a.social-link-item {
+                color: $secondary;
+                &:hover,
+                &:focus {
+                    color: lighten($secondary, 14%);
+                }
+            }
+        }
+    }
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .nav-item {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        & a {
+            margin-top: 1em;
+            text-transform: lowercase;
+            font-size: 85%;
+            color: $secondary;
+            &:hover,
+            &:focus {
+                color: lighten($secondary, 14%);
+            }
+        }
+    }
+}
