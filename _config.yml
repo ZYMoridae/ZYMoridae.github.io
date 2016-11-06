@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: Joezy
+title: Joe
 email:
 description: Never give up.
 url: # the base hostname & protocol for your site
@@ -36,7 +36,7 @@ sass:
 ####################################
 #
 owner:
-  name: Yue Zhou
+  name: Yue Zhou(Joe)
   avatar: s2.png
   job: "Software Developer & Web Designer"
   bio: ""
