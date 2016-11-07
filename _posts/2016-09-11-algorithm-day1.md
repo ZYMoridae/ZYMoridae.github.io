@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Algorithm Day 1
-excerpt: "It is the first day to pick up the algorithm after the graduation. After the interview with Google, I realized the importance of the algorithm and how it works in our daily coding."
+excerpt: "It is the first day to pick up the algorithm after I got my master degree. After the interview with Google, I realized the importance of the algorithm and how it works in our daily coding."
 categories: [Algorithm]
 comments: true
 ---
