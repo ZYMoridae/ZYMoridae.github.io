@@ -7,6 +7,7 @@ comments: true
 ---
 
 1. 社会责任感
+
 Social responsibility is an ethical or ideological theory that an entity, whether it is a government, corporation, organization or individual, has a responsibility to society.
 There is a large inequality in the means and roles of different entities to fulfill their claimed responsibility. This would imply that different entities have different responsibilities, insomuch as states should ensure the civil rights of their citizens, that corporations should respect and encourage the human rights of their employees and that citizens should abide by written laws. But social responsibility can mean more than these examples. Many NGOs accept that their roles and the responsibility of their members as citizens are to help improve society by taking a proactive
 stance in their societal roles. It can also imply that corporations have an implicit obligation to give back to society (such as is claimed as part of corporate social responsibility and/or stakeholder theory).
