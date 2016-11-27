@@ -8,10 +8,8 @@ comments: true
 
 1. 社会责任感
 Social responsibility is an ethical or ideological theory that an entity, whether it is a government, corporation, organization or individual, has a responsibility to society.
-
 There is a large inequality in the means and roles of different entities to fulfill their claimed responsibility. This would imply that different entities have different responsibilities, insomuch as states should ensure the civil rights of their citizens, that corporations should respect and encourage the human rights of their employees and that citizens should abide by written laws. But social responsibility can mean more than these examples. Many NGOs accept that their roles and the responsibility of their members as citizens are to help improve society by taking a proactive
 stance in their societal roles. It can also imply that corporations have an implicit obligation to give back to society (such as is claimed as part of corporate social responsibility and/or stakeholder theory).
-
 Social responsibility is voluntary; it is about going above and beyond what is called for by the law (legal responsibility). It involves an idea that it is better to be proactive toward a problem rather than reactive to a problem. Social responsibility means eliminating corrupt, irresponsible or unethical behavior that might bring harm to the community, its people, or the environment before the behavior happens.
 
 2. 选择的自由性
@@ -24,12 +22,10 @@ The self-control of motivation is increasingly understood as a subset of emotion
 Fundamental purposes that have been proposed for education include:
 The enterprise of civil society depends on educating young people to become responsible, thoughtful and enterprising citizens. This is an intricate, challenging task requiring deep understanding of ethical principles, moral values, political theory, aesthetics, and economics, not to mention an understanding of who children are, in themselves and in society.
 Progress in every practical field depends on having capacities that schooling can educate. Education is thus a means to foster the individual‟s, society‟s, and even humanity‟s future development and prosperity. Emphasis is often put on economic success in this regard.
-
 One‟s individual development and the capacity to fulfill one‟s own purposes can depend on an adequate preparation in childhood. Education can thus attempt to give a firm foundation for the achievement of personal fulfillment. The better the foundation is built, the more successful the child will be. Simple basics in education can carry a child far.
 
 5. 网络的作用
 The technology revolution is upon us. In the past, there have been many triumphs in the world of technology. To this date, people are able to communicate over thousands of miles with the greatest of ease. The Internet connects nearly 400 million users worldwide and is an essential part of how we work, play, communicate, and conduct commerce. We use the Internet in ways that seemed unimaginable in the past.
-
 The Internet provides convenience for people to learn at home. Internet based training has become a common business tool used to gain advancements in current jobs. Tutoring over the Internet is also available. Business on the Internet is a growing technology. Business on the Internet has no geographic boundaries; it has access to more consumers. Approximately 150 businesses join the Internet every day. There is less labor force needed and it is open 24 hours a day. The Internet is also a bigger and cheaper way to advertise. In the past 20 years, the Internet has changed a number of areas in society, especially the business world. In the last 40 years, the Internet has gone from a method of defense communication for the government, to a business venture for an entrepreneur or a fortune 500-company. The Internet is a way for gaining consumers, products and capital for a business.
 
 6. 网络的危害
