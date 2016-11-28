@@ -7,11 +7,11 @@ comments: true
 ---
 
 
-1. Many young people get married before finishing their study and establishing a good job. To what extant do you agree? Please explain.
+1. **Many young people get married before finishing their study and establishing a good job. To what extant do you agree? Please explain.**
 
 2. Some people believe that human behavior can be changed by laws; others argue that laws have little effect on human behavior. Which opinion do you agree with? Please explain.
 
-3. The past 100 years witnessed numerous important inventions, such as computers. What do you think is the most important invention among them? Please explain.
+3. **The past 100 years witnessed numerous important inventions, such as computers. What do you think is the most important invention among them? Please explain.**
 
 4. Global climate change is regarded as a severe problem. Who should take responsibilities  governments, large companies or individuals? Please explain.
 
