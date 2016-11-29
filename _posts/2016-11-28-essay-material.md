@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Essay Material
-excerpt: "GRE material"
+excerpt: "GRE essay materials"
 categories: [PTE]
 comments: true
 ---
