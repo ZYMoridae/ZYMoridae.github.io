@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Practice Material
-excerpt: "PTE Practice Material"
+excerpt: "The materials for practicing describe image, listening and reading."
 categories: [PTE]
 comments: true
 ---
