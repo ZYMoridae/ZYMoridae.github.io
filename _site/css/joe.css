@@ -1,8 +1,13 @@
 .sec-header{
 	margin-top: 0px;
 }
-.sec-content{
+.sec-content-s1{
 	background-color: #b9ebff;
+	border-radius: 5px;
+	padding: 6px 10px 4px 10px;
+}
+.sec-content-s2{
+	background-color: #cbdbff;
 	border-radius: 5px;
 	padding: 6px 10px 4px 10px;
 }
