@@ -46,3 +46,14 @@
 	display: inline-block;
 	border-radius: 5px;
 }
+.sec-books div{
+	padding: 2px 5px 2px 5px;
+	font-size: 15px;
+	margin: 2px;
+	display: inline-block;
+	border-radius: 5px;
+	color: black;
+}
+.sec-books div a{
+	color: #002561;
+}
