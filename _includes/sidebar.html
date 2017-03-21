@@ -1,5 +1,9 @@
 {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
 
+
+<img style="border-radius: 10px;width: 70px;height: 70px;position: absolute;top: 20px;left: 20px;" src="{{ site.url }}/img/zylogo.png">
+
+
 <div class="cover-card table-cell table-middle hero-effect">
     {% if author.avatar %}
     <img class="img-circle avatar" src="{{ site.url }}/img/{{ author.avatar }}" alt=""> {% endif %}
@@ -20,6 +24,6 @@
             {% endif %} {% endfor %}
         </ul>
     </nav> -->
-    <a class="btn res-btn" href="{{ site.url }}/assets/YUE_ZHOU_(Joe)_Resume.pdf">Download my Resume</a>
+    <a class="btn res-btn" target="_blank" href="{{ site.url }}/assets/YUE_ZHOU_(Joe)_Resume.pdf">Download my Resume</a>
     {% include social-links.html %}
 </div>
