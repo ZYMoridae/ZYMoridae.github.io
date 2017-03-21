@@ -57,3 +57,18 @@
 .sec-books div a{
 	color: #002561;
 }
+
+
+.res-btn {
+	border-radius: 5px;
+	border-width: 1px;
+	background-color: #357ded;
+	color: white;
+	transition: all .2s ease-in;
+}
+
+.res-btn:hover{
+	border-color: #357ded;
+	background-color: purple;
+	color: white;
+}
