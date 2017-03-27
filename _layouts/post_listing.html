@@ -2,297 +2,318 @@
 layout: default 
 ---
 
-<h1 class="sec-header" style="margin-top: 0px;"><i class="fa fa-archive" style="color: #875baf;" aria-hidden="true"></i> Portfolio</h1>
-<hr>
+<div class="animated fadeInRight">
 
-<div>
-                        <!-- normal -->
-    <div class="ih-item square effect6 from_top_and_bottom" style="display: inline-block; margin: 15px;">
-        <a href="http://crest-centre.net/">
-            <div class="img">
-                <img src="{{site.url}}/img/crest.png" alt="img">
-            </div>
-            <div class="info">
-                <h3>Crest Center</h3>
-                <p>Web Design & Development</p>
-            </div>
-        </a>
-    </div>
+    <!-- Portfolio -->
+    <h1 class="sec-header" style="margin-top: 0px;">
+        <i class="fa fa-archive" style="color: #875baf;" aria-hidden="true"></i> Portfolio
+    </h1>
+    <hr>
 
-    <div class="ih-item square effect6 from_top_and_bottom" style="display: inline-block; margin: 15px;">
-        <a href="https://zymoridae.github.io/">
-            <div class="img">
-                <img src="{{site.url}}/img/zymoridae.png" alt="img">
-            </div>
-            <div class="info">
-                <h3>ZyMoridae.github.io</h3>
-                <p>Web Design & Development</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="ih-item square effect6 from_top_and_bottom" style="display: inline-block; margin: 15px;">
-        <a href="{{site.url}}/wst_edu.html">
-            <div class="img">
-                <img src="{{site.url}}/img/wst_edu/wstedu_icon.jpg" alt="img">
-            </div>
-            <div class="info">
-                <h3>Waste Education System</h3>
-                <p>Mobile Application & iOS</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="ih-item square effect6 from_top_and_bottom" style="display: inline-block; margin: 15px;">
-        <a href="{{site.url}}/mwa.html">
-            <div class="img">
-                <img src="{{site.url}}/img/mwa/mwa_icon.png" alt="img">
-            </div>
-            <div class="info">
-                <h3>MyiCarer</h3>
-                <p>Mobile Application & Android</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="ih-item square effect6 from_top_and_bottom" style="display: inline-block; margin: 15px;">
-        <a href="{{site.url}}/msep.html">
-            <div class="img">
-                <img src="{{site.url}}/img/msep/msep_icon.png" alt="img">
-            </div>
-            <div class="info">
-                <h3>Robot Project</h3>
-                <p>Degree Related Project & Java</p>
-            </div>
-        </a>
-    </div>
-
-</div>
-
-
-
-
-<h1 class="sec-header"><i class="fa fa-graduation-cap" style="color: #08bdbd;" aria-hidden="true"></i> Education</h1>
-<hr>
-
-<section class="sec-edu sec-content-s1">
-    <img class="img-circle uni-hero" src="{{site.url}}/img/jnuni_logo.jpg">
     <div>
-        <h4>Bachelor Degree in Computer Science</h4>
-        <h5>Sep 2010 - Jul 2014</h5>
-        <h5><a href="http://www.jiangnan.edu.cn/">Jiangnan University</a>, Wuxi, Jiangsu China</h5>
+        {% assign link_address = "http://crest-centre.net/, https://zymoridae.github.io/, https://zymoridae.github.io/wst_edu.html, https://zymoridae.github.io/mwa.html, https://zymoridae.github.io/msep.html" | split: ", " %}
+
+        {% assign snap_name = "crest.png, zymoridae.png, wstedu.jpg, mwa.png, msep.png" | split: ", " %}
+
+        {% assign proj_name = "Crest Center, ZyMoridae.github.io, Waste Education System, MyiCarer, Robot Project" | split: ", " %}
+
+        {% assign proj_type= "Web Design & Development, Web Design & Development, Mobile Application & iOS, Mobile Application & Android, Degree Related Project & Java" | split: ", " %}
+
+
+        {% for i in (0..4) %}
+            <div class="ih-item square effect6 from_top_and_bottom" style="display: inline-block; margin: 15px;">
+                <a href="{{ link_address[i] }}">
+                    <div class="img">
+                        <img src="{{site.url}}/img/shortcut/{{ snap_name[i] }}" alt="img">
+                    </div>
+                    <div class="info">
+                        <h3>{{ proj_name[i] }}</h3>
+                        <p>{{ proj_type[i] }}</p>
+                    </div>
+                </a>
+            </div>       
+        {% endfor %}
     </div>
-</section>
 
-<section class="sec-edu sec-content-s2">
-    <img class="img-circle uni-hero" src="{{site.url}}/img/adeuni_logo.jpg">
-    <div style="vertical-align: middle;">
-        <h4>Master of Software Engineering</h4>
-        <h5>Jul 2014 - Jul 2016</h5>
-        <h5><a href="http://www.adelaide.edu.au/">University of Adelaide</a>, Adelaide, SA Australia</h5>
-    </div>
 
-</section>
+    <!-- Education -->
+    <h1 class="sec-header">
+        <i class="fa fa-graduation-cap" style="color: #08bdbd;" aria-hidden="true"></i> Education
+    </h1>
+    <hr>
 
-<!-- Employment-contract history -->
+    <section class="sec-edu sec-content-s1">
+        <img class="img-circle uni-hero" src="{{site.url}}/img/jnuni_logo.jpg">
+        <div>
+            <h4>Bachelor Degree in Computer Science</h4>
+            <h5>Sep 2010 - Jul 2014</h5>
+            <h5>
+                <a href="http://www.jiangnan.edu.cn/">Jiangnan University</a>, Wuxi, Jiangsu China
+            </h5>
+        </div>
+    </section>
 
-<h1 class="sec-header"><i class="fa fa-briefcase" style="color: #aa8f66;" aria-hidden="true"></i> Employment-Contract History</h1>
-<hr>
+    <section class="sec-edu sec-content-s2">
+        <img class="img-circle uni-hero" src="{{site.url}}/img/adeuni_logo.jpg">
+        <div style="vertical-align: middle;">
+            <h4>Master of Software Engineering</h4>
+            <h5>Jul 2014 - Jul 2016</h5>
+            <h5>
+                <a href="http://www.adelaide.edu.au/">University of Adelaide</a>, Adelaide, SA Australia
+            </h5>
+        </div>
+    </section>
 
-<section class="sec-content-s1">
-    <header>
-        <h4>House Rent System</h3>
-        <h5> - Web Developer</h5>
-        <h5>Jan 2015 - Jul 2015, SA Australia</h4>
-    </header>
-    <div>
-    	Developing the web application ’House Rent System’ with the aim of establishing a platform helping people find a relevant property.
-    </div>
-    <div>
-    	<ul>
-    		<li><b>Application Design</b> Responsible for application establishment by utilising ’Laravel’ framework which is implemented by PHP based upon MVC (Model-View-Controller) pattern.</li>
-    		<li><b>Front-end Design</b> Responsible for web page establishment by using HTML, CSS (Bootstrap), JavaScript (JQuery). </li>
-    		<li><b>Server Establishment</b> Responsible for database establishment by adopting ’MySQL’ which leverages the back-end storage part.</li>
-    	</ul>
-    </div>
-    <div>
-        <b>Relative Skills:</b> Javascript, PHP(Laravel), MySQL, Photoshop
-    </div>
-</section>
 
-<section class="sec-content-s2">
-    <header>
-        <h4><a class="proj-link" href="https://malibabar.wordpress.com/2016/09/26/smart-campus-gamification-of-disposing-waste-sustainably/">Waste Education Application - Smart Campus</a></h4>
-        <h5> - Part-time Application Developer</h5>
-        <h5>Dec 2015 - Jul 2016, SA Australia, University of Adelaide</h5>
-    </header>
+    <!-- Employment-contract history -->
+    <h1 class="sec-header">
+        <i class="fa fa-briefcase" style="color: #aa8f66;" aria-hidden="true"></i> Employment-Contract History
+    </h1>
+    <hr>
+
+    <section class="sec-content-s1">
+        <header>
+            <h4>House Rent System</h3>
+            <h5> - Web Developer</h5>
+            <h5>Jan 2015 - Jul 2015, SA Australia</h4>
+        </header>
+        <div>
+            Developing the web application ’House Rent System’ with the aim of establishing a platform helping people find a relevant property.
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <b>Application Design</b> Responsible for application establishment by utilising ’Laravel’ framework which is implemented by PHP based upon MVC (Model-View-Controller) pattern.
+                </li>
+                <li>
+                    <b>Front-end Design</b> Responsible for web page establishment by using HTML, CSS (Bootstrap), JavaScript (JQuery).
+                </li>
+                <li>
+                    <b>Server Establishment</b> Responsible for database establishment by adopting ’MySQL’ which leverages the back-end storage part.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <b>Relative Skills:</b> Javascript, PHP(Laravel), MySQL, Photoshop
+        </div>
+    </section>
+
+    <section class="sec-content-s2">
+        <header>
+            <h4>
+                <a class="proj-link" href="https://malibabar.wordpress.com/2016/09/26/smart-campus-gamification-of-disposing-waste-sustainably/">
+                    Waste Education Application - Smart Campus
+                </a>
+            </h4>
+            <h5> 
+                - Part-time Application Developer
+            </h5>
+            <h5>
+                Dec 2015 - Jul 2016, SA Australia, University of Adelaide
+            </h5>
+        </header>
     <div>
         Developing the iOS mobile application ’Waste Education Application’ with the aim of assisting students to improve the consciousness of environmental protection and waste recycling in the campus.
     </div>
     <div>
         <ul>
-            <li><b>Requirement Extraction</b> Organising a user requirement meeting with the staff from Ecoversity department of the University of Adelaide, and analysing system requirements for further system design. </li>
-            <li><b>Application Design</b> Responsible for GUI design such as layout, theme, and styles through using StoryBoard of Swift.</li>
-            <li><b>Server Establishment</b> Responsible for database establishment by adopting ’Django.’ framework which is implemented by Python based upon MVC pattern.</li>
-            <li><b>API (Application Interface) Design</b> Responsible for achieving the RESTful API, connecting and enabling the communication between clients and server.</li>
-            <li><b>Quality Assurance</b> Responsible for unit test case design for validating the code quality.</li>
-            <li><b>Server Configuration</b> Responsible for server establishment and publishment to ensure application running smoothly, including parameter configuration, feature debugging and version backup.</li>    
+            <li>
+                <b>Requirement Extraction</b> Organising a user requirement meeting with the staff from Ecoversity department of the University of Adelaide, and analysing system requirements for further system design.
+            </li>
+            <li>
+                <b>Application Design</b> Responsible for GUI design such as layout, theme, and styles through using StoryBoard of Swift.
+            </li>
+            <li>
+                <b>Server Establishment</b> Responsible for database establishment by adopting ’Django.’ framework which is implemented by Python based upon MVC pattern.
+            </li>
+            <li>
+                <b>API (Application Interface) Design</b> Responsible for achieving the RESTful API, connecting and enabling the communication between clients and server.
+            </li>
+            <li>
+                <b>Quality Assurance</b> Responsible for unit test case design for validating the code quality.
+            </li>
+            <li>
+                <b>Server Configuration</b> Responsible for server establishment and publishment to ensure application running smoothly, including parameter configuration, feature debugging and version backup.
+            </li>    
         </ul>
     </div>
     <div>
         <b>Relative Skills:</b> Javascript, Node.js, RESTful API, Git, MySQL, Photoshop
     </div>
-</section>
+    </section>
 
 
-<!-- Degree related history -->
+    <!-- Degree related history -->
 
-<h1 class="sec-header"><i class="fa fa-certificate" style="color: #7f7caf;" aria-hidden="true"></i> Degree Related Project</h1>
-<hr>
+    <h1 class="sec-header">
+        <i class="fa fa-certificate" style="color: #7f7caf;" aria-hidden="true"></i> Degree Related Project
+    </h1>
+    <hr>
 
-<section class="sec-content-s1">
-    <header>
-        <h4>Collaborative Workspaces of Industrial Systems</h4>
-        <h5>Mar 2015 - Oct 2015, University of Adelaide, SA Australia</h5>
-    </header>
+    <section class="sec-content-s1">
+        <header>
+            <h4>Collaborative Workspaces of Industrial Systems</h4>
+            <h5>Mar 2015 - Oct 2015, University of Adelaide, SA Australia</h5>
+        </header>
+        <div>
+            Developing the platform that is able to assist software teams to be collaborated for designing the software architecture and making important decisions without any localization limitation.
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <b>Back-end Development</b> Establishing the web-based collaborating system by using MVC framework Groovy on Grails.</li>
+                <li>
+                    <b>Front-end Development</b> Utilize the Bootstrap framework build the user interface.
+                </li>
+                <li>
+                    <b>Multi-tenant Implementation</b> Combination with the Docker technology to achieve the multi-tenant platform.
+                </li>
+                <li>
+                    <b>Database Design</b> Adopt the PostgreSQL as the basement to implement the data storage system.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <b>Relative Skills:</b> Javascript, Groovy on Grails, JSP, Docker, OpenStack, Photoshop
+        </div>
+    </section>
+
+    <section class="sec-content-s2">
+        <header>
+            <h4>MyiCareer</h4>
+            <h5>Mar 2016 - Jul 2016, 
+                <a class="proj-link" href="http://autoidlab.cs.adelaide.edu.au/">   Auto-ID Lab
+                </a>, University of Adelaide, SA Australia
+            </h5>
+        </header>
+        <div>
+            Mainly developed a mobile-based application for the elderly people that could help them prevent any severe issues after fall.
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <b>Back-end Development</b> Establishing the web-based collaborating system by using MVC framework Groovy on Grails.
+                </li>
+                <li>
+                    <b>Front-end Development</b> Utilize the Bootstrap framework build the user interface.
+                </li>
+                <li>
+                    <b>Multi-tenant Implementation</b> Combination with the Docker technology to achieve the multi-tenant platform.
+                </li>
+                <li>
+                    <b>Database Design</b> Adopt the PostgreSQL as the basement to implement the data storage system.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <b>Relative Skills:</b> Python, Android, Machine Learning(SVM), Photoshop
+        </div>
+    </section>
+
+
+    <!-- Skills stack -->
+
+    <h1 class="sec-header">
+        <i class="fa fa-trophy" style="color: #c9100e;" aria-hidden="true"></i> Awards & Achievements
+    </h1>
+    <hr>
+
+    <section class="sec-content-s1" style="display: inline-block;">
+        <div style="display: inline-block;">
+            <div> - Jan 2016, <a class="proj-link" href="http://www.data61.csiro.au/">Data61 Summer Scholarship</a></div>
+            <div> - Dec 2013, Second-rate Scholarship</div>
+            <div> - Dec 2012, Third-rate Scholarship</div>
+            <div> - Dec 2011, Third-rate Scholarships</div>
+        </div>
+    </section>
+
+
+    <!-- Skills stack -->
+
+    <h1 class="sec-header"><i class="fa fa-cogs" style="color: #fbb132;" aria-hidden="true"></i> Skills Stack</h1>
+    <hr>
+
+
     <div>
-        Developing the platform that is able to assist software teams to be collaborated for designing the software architecture and making important decisions without any localization limitation.
+        <div class="sec-content-s1" style="display: inline-block;vertical-align: top;margin-right: 10px;">
+            <div><b>General Skills</b></div>
+            <div> - Java</div>
+            <div> - Javascript</div>
+            <div> - Python</div>
+        </div>
+        <div class="sec-content-s2" style="display: inline-block;vertical-align: top;margin-right: 10px;">
+            <div><b>Front-End</b></div>
+            <div> - HTML</div>
+            <div> - CSS</div>
+            <div> - SASS/LESS</div>
+            <div> - Bootstrap</div>
+            <div> - AngularJS</div>
+        </div> 
+        <div class="sec-content-s1" style="display: inline-block;vertical-align: top;margin-right: 10px;">
+            <div><b>Back-End</b></div>
+            <div> - PHP</div>
+            <div> - Node.js</div>
+            <div> - Nginx</div>
+            <div> - Django</div>
+            <div> - MySQL</div>
+            <div> - PostgreSQL</div>
+        </div> 
+        <div class="sec-content-s2" style="display: inline-block;vertical-align: top;">
+            <div><b>Other</b></div>
+            <div> - Agile</div>
+            <div> - Scrum</div>
+            <div> - SVN</div>
+            <div> - Git</div>
+            <div> - Docker</div>
+            <div> - Vagrant</div>
+        </div>    
     </div>
-    <div>
-        <ul>
-            <li><b>Back-end Development</b> Establishing the web-based collaborating system by using MVC framework Groovy on Grails.</li>
-            <li><b>Front-end Development</b> Utilize the Bootstrap framework build the user interface.</li>
-            <li><b>Multi-tenant Implementation</b> Combination with the Docker technology to achieve the multi-tenant platform.</li>
-            <li><b>Database Design</b> Adopt the PostgreSQL as the basement to implement the data storage system.</li>
-        </ul>
+
+
+    <!-- Languages -->
+    <h1 class="sec-header">
+        <i class="fa fa-language" style="color:#1d9d73;" aria-hidde="true"></i> Language
+    </h1>
+    <hr>
+
+    <div class="sec-lang">
+        <img src="{{site.url}}/img/english.png">
+        <img src="{{site.url}}/img/mand.png">
     </div>
-    <div>
-        <b>Relative Skills:</b> Javascript, Groovy on Grails, JSP, Docker, OpenStack, Photoshop
+
+
+    <!-- Interests -->
+    <h1 class="sec-header">
+        <i class="fa fa-paint-brush" style="color: #489fdf;" aria-hidden="true"></i> Interests
+    </h1>
+    <hr>
+
+    <section class="sec-content-s2" style="display: inline-block;">
+        <div> - Running</div>
+        <div> - Cooking</div>
+        <div> - Traveling</div>
+        <div> - Online gaming</div>
+        <div> - Reading books</div>
+    </section>
+
+
+    <!-- Books -->
+    <h1 class="sec-header">
+        Books I <i class="fa fa-heart animated infinite pulse" style="color: pink;" aria-hidden="true"></i>
+    </h1>
+    <hr>
+
+    <div class="sec-books">
+        <div>
+            <a href="https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude">    One Hundred Years of Solitude
+            </a>
+        </div>
+        <div>
+            <a href="https://en.wikipedia.org/wiki/The_Moon_and_Sixpence">
+                The Moon and Sixpence
+            </a>
+        </div>
     </div>
-</section>
 
-<section class="sec-content-s2">
-    <header>
-        <h4>MyiCareer</h4>
-        <h5>Mar 2016 - Jul 2016, <a class="proj-link" href="http://autoidlab.cs.adelaide.edu.au/">Auto-ID Lab</a>, University of Adelaide, SA Australia</h5>
-    </header>
-    <div>
-        Mainly developed a mobile-based application for the elderly people that could help them prevent any severe issues after fall.
-    </div>
-    <div>
-        <ul>
-            <li><b>Back-end Development</b> Establishing the web-based collaborating system by using MVC framework Groovy on Grails.</li>
-            <li><b>Front-end Development</b> Utilize the Bootstrap framework build the user interface.</li>
-            <li><b>Multi-tenant Implementation</b> Combination with the Docker technology to achieve the multi-tenant platform.</li>
-            <li><b>Database Design</b> Adopt the PostgreSQL as the basement to implement the data storage system.</li>
-        </ul>
-    </div>
-    <div>
-        <b>Relative Skills:</b> Python, Android, Machine Learning(SVM), Photoshop
-    </div>
-</section>
-
-
-<!-- Skills stack -->
-
-<h1 class="sec-header"><i class="fa fa-trophy" style="color: #c9100e;" aria-hidden="true"></i> Awards & Achievements</h1>
-<hr>
-
-<section class="sec-content-s1" style="display: inline-block;">
-    <div style="display: inline-block;">
-        <div> - Jan 2016, <a class="proj-link" href="http://www.data61.csiro.au/">Data61 Summer Scholarship</a></div>
-        <div> - Dec 2013, Second-rate Scholarship</div>
-        <div> - Dec 2012, Third-rate Scholarship</div>
-        <div> - Dec 2011, Third-rate Scholarships</div>
-    </div>
-</section>
-
-
-<!-- Skills stack -->
-
-<h1 class="sec-header"><i class="fa fa-cogs" style="color: #fbb132;" aria-hidden="true"></i> Skills Stack</h1>
-<hr>
-
-
-<div>
-    <div class="sec-content-s1" style="display: inline-block;vertical-align: top;margin-right: 10px;">
-        <div><b>General Skills</b></div>
-        <div> - Java</div>
-        <div> - Javascript</div>
-        <div> - Python</div>
-    </div>
-    <div class="sec-content-s2" style="display: inline-block;vertical-align: top;margin-right: 10px;">
-        <div><b>Front-End</b></div>
-        <div> - HTML</div>
-        <div> - CSS</div>
-        <div> - SASS/LESS</div>
-        <div> - Bootstrap</div>
-        <div> - AngularJS</div>
-    </div> 
-    <div class="sec-content-s1" style="display: inline-block;vertical-align: top;margin-right: 10px;">
-        <div><b>Back-End</b></div>
-        <div> - PHP</div>
-        <div> - Node.js</div>
-        <div> - Nginx</div>
-        <div> - Django</div>
-        <div> - MySQL</div>
-        <div> - PostgreSQL</div>
-    </div> 
-    <div class="sec-content-s2" style="display: inline-block;vertical-align: top;">
-        <div><b>Other</b></div>
-        <div> - Agile</div>
-        <div> - Scrum</div>
-        <div> - SVN</div>
-        <div> - Git</div>
-        <div> - Docker</div>
-        <div> - Vagrant</div>
-    </div>    
-</div>
-
-
-<!-- <div class="sec-skills">
-    <div>JAVA</div>
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JavaScript</div>
-    <div>Python</div>
-    <div>C</div>
-    <div>C++</div>
-    <div>PHP</div>
-    <div>Swift</div>
-    <div>PostgreSQL</div>
-    <div>MySQL</div>
-    <div>Git</div>
-    <div>SVN</div>
-</div> -->
-
-<h1 class="sec-header"><i class="fa fa-language" style="color:#1d9d73;" aria-hidde="true"></i> Language</h1>
-<hr>
-
-<div class="sec-lang">
-    <img src="{{site.url}}/img/english.png">
-    <img src="{{site.url}}/img/mand.png">
-</div>
-
-
-<h1 class="sec-header"><i class="fa fa-paint-brush" style="color: #489fdf;" aria-hidden="true"></i> Interests</h1>
-<hr>
-
-<section class="sec-content-s2" style="display: inline-block;">
-    <div> - Running</div>
-    <div> - Cooking</div>
-    <div> - Traveling</div>
-    <div> - Online gaming</div>
-    <div> - Reading books</div>
-</section>
-
-
-
-<h1 class="sec-header">Books I <i class="fa fa-heart animated infinite pulse" style="color: pink;" aria-hidden="true"></i></h1>
-<hr>
-
-<div class="sec-books">
-    <div><a href="https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude">One Hundred Years of Solitude</a></div>
-    <div><a href="https://en.wikipedia.org/wiki/The_Moon_and_Sixpence">The Moon and Sixpence</a></div>
 </div>
 
