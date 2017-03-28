@@ -136,30 +136,59 @@
 	<hr>
 
 	<div style="font-size: 12pt;">
-		For the purpose of this project the robot will be a miniature one. The demo will be carried out on an A1 paper map; all the debris will be scaled to size to simulate the operation. Our robot will identify and mark all the debris on the map in the GUI system.
+		
+		<div style="margin-bottom: 10px;">
+			For the purpose of this project the robot will be a miniature one. The demo will be carried out on an A1 paper map; all the debris will be scaled to size to simulate the operation. Our robot will identify and mark all the debris on the map in the GUI system.
+		</div>
 
-		The project team has the ability to carry out all its operations automatically but due to safety requirements the robot will be operated under the operator’s supervision.
+		<div style="margin-bottom: 10px;">
+			The project team has the ability to carry out all its operations automatically but due to safety requirements the robot will be operated under the operator’s supervision.
+		</div>
 
-		The robot system is divided into five main areas namely:
+		<div style="margin-bottom: 10px;">
+			The robot system is divided into five main areas namely:
+			<ul>
+				<li>
+					Robot Controllers:
+					<ul>
+						<li>This system is responsible for providing a high level interface to the robot and its data.</li>
+						<li>Explorer Carries out the exploration of the map and marks the no go zone.</li>
+						<li>Pathfinder generally moves the robot between known points on the map.</li>
+					</ul>
+				</li>
 
-		Robot Controllers:
-			• This system is responsible for providing a high level interface to the robot and its data.
-			• Explorer Carries out the exploration of the map and marks the no go zone.
-			• Pathfinder generally moves the robot between known points on the map.
+				<li>
+					GUI:
+					<ul>
+						<li>GUIView displaces the model data.</li>
+						<li>GUIController generally provides the user-interface controls.</li>
+					</ul>
+				</li>
 
-		GUI:
-			• GUIView displaces the model data.
-			• GUIController generally provides the user-interface controls.
+				<li>
+					Model:
+					<ul>
+						<li>Model contains the model</li>
+						<li>Ranger detects obstacles from Robot SA’s ultrasonic sensors.</li>
+					</ul>
+				</li>
 
-		Model:
-			• Model contains the model
-			• Ranger detects obstacles from Robot SA’s ultrasonic sensors.
+				<li>
+					Data Access:
+					<ul>
+						<li>Solely responsible for writing and reading the systems knowledge and converting them to XML files.</li>
+					</ul>
+				</li>
 
-		Data Access:
-			Solely responsible for writing and reading the systems knowledge and converting them to XML files.
-
-		Robot:
-			The finished product, generally responds to commands from the RobotController, returns data from sensors to the GUI. 
+				<li>
+					Robot:
+					<ul>
+						<li>The finished product, generally responds to commands from the RobotController, returns data from sensors to the GUI.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>	
+			 
 	</div>
 
 	<!-- Related Skills -->
