@@ -29,6 +29,23 @@
 	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 }
+.sec-content-s3{
+	background-color: rgba(248, 0, 111, 0.8);
+	border-radius: 10px;
+	padding: 6px 10px 6px 15px;
+	margin-bottom: 20px;
+	color: white;
+	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+}
+.sec-content-s3 .proj-link {
+	color: #fff !important;
+	text-decoration: underline;
+}
+.sec-content-s3 a {
+	color: #fff !important;
+}
 .sec-edu > .uni-hero{
 	width: 120px;
 	height: 120px;
@@ -43,8 +60,8 @@
 	margin: 0px !important;
 }
 .sec-edu a{
-text-decoration: none;
-	color: blue;
+	text-decoration: none;
+	color: black;
 	transition: all .4s ease-in;
 }
 .sec-edu a:hover{
@@ -92,12 +109,12 @@ text-decoration: none;
 	border-color: #875baf;
 	color: white !important;
 }
-.proj-link{
-text-decoration: none;
-	color: blue;
-	transition: all .4s ease-in;
-}
-.proj-link:hover{
-	text-decoration: none;
-	color: #ca2e55;
-}
+// .proj-link{
+// text-decoration: none;
+// 	color: blue;
+// 	transition: all .4s ease-in;
+// }
+// .proj-link:hover{
+// 	text-decoration: none;
+// 	color: #ca2e55;
+// }

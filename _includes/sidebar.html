@@ -1,7 +1,7 @@
 {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
 
 
-<a href="{{ site.url }}/"><img class="sec-icon" style="border-radius: 10px;width: 70px;height: 70px;position: absolute;top: 20px;left: 20px;" src="{{ site.url }}/img/zylogo.png"></a>
+<a class="zy-logo"><img class="sec-icon" style="border-radius: 10px;width: 70px;height: 70px;position: absolute;top: 20px;left: 20px;" src="{{ site.url }}/img/zylogo.png"></a>
 
 
 
@@ -26,8 +26,8 @@
             {% endif %} {% endfor %}
         </ul>
     </nav> -->
-    <a class="btn res-btn" target="_blank" href="{{ site.url }}/assets/YUE_ZHOU_(Joe)_Resume.pdf">
+<!--     <a class="btn res-btn" target="_blank" href="{{ site.url }}/assets/YUE_ZHOU_(Joe)_Resume.pdf">
         Download my Resume
-    </a>
+    </a> -->
     {% include social-links.html %}
 </div>

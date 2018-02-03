@@ -7,7 +7,6 @@ var color6 = "#d19daf";
 
 
 $(".sec-skills div").each(function (index, element) {
-
     var index_color = Math.floor((Math.random() * 6)) % 6;
     var f_color = color1;
     if(index_color == 0)
@@ -43,4 +42,8 @@ $(".sec-books div").each(function (index, element) {
     else if(index_color == 5)
         f_color = color6;
     $(this).css({'background-color':f_color});
+});
+
+$(".zy-logo").click(function(){
+    $('.post-listing').animate({scrollTop:0}, 'slow');
 });
