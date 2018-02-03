@@ -7,10 +7,10 @@ layout: default
   <!-- Portfolio -->
   <h1 class="sec-header" style="margin-top: 0px;">
     <i class="fa fa-archive" style="color: #875baf;" aria-hidden="true"></i> Portfolio
-</h1>
-<hr>
+  </h1>
+  <hr>
 
-<div>
+  <div>
     {% assign link_address = "https://app.sweat.com/, https://forum.sweat.com/, http://crest-centre.net/, https://zymoridae.github.io/, https://zymoridae.github.io/wst_edu.html, https://zymoridae.github.io/mwa.html, https://zymoridae.github.io/msep.html" | split: ", " %}
 
     {% assign snap_name = "sweat_webapp_logo.png, sweat_forum_logo.png, crest.png, zymoridae.png, wstedu.jpg, mwa.png, msep.png" | split: ", " %}
@@ -19,181 +19,177 @@ layout: default
 
     {% assign proj_type= "Web Design & Development, Web Design & Development, Web Design & Development, Web Design & Development, Mobile Application & iOS, Mobile Application & Android, Degree Related Project & Java" | split: ", " %}
 
-
     {% for i in (0..6) %}
-    <div class="ih-item square effect6 from_top_and_bottom" style="display: inline-block; margin: 15px;">
-      <a href="{{ link_address[i] }}">
-        <div class="img">
-          <img src="{{site.url}}/img/shortcut/{{ snap_name[i] }}" alt="img">
-      </div>
-      <div class="info">
-          <h3>{{ proj_name[i] }}</h3>
-          <p>{{ proj_type[i] }}</p>
-      </div>
-  </a>
-</div>     
-{% endfor %}
-</div>
+      <div class="ih-item square effect6 from_top_and_bottom" style="display: inline-block; margin: 15px;">
+        <a href="{{ link_address[i] }}">
+          <div class="img">
+            <img src="{{site.url}}/img/shortcut/{{ snap_name[i] }}" alt="img">
+          </div>
+          <div class="info">
+            <h3>{{ proj_name[i] }}</h3>
+            <p>{{ proj_type[i] }}</p>
+          </div>
+        </a>
+      </div>     
+    {% endfor %}
+  </div>
 
+  <!-- Education -->
+  <h1 class="sec-header">
+      <i class="fa fa-graduation-cap" style="color: #08bdbd;" aria-hidden="true"></i> Education
+  </h1>
+  <hr>
 
-<!-- Education -->
-<h1 class="sec-header">
-    <i class="fa fa-graduation-cap" style="color: #08bdbd;" aria-hidden="true"></i> Education
-</h1>
-<hr>
-
-<section class="sec-edu sec-content-s1">
+  <section class="sec-edu sec-content-s1">
     <img class="img-circle uni-hero" src="{{site.url}}/img/jnuni_logo.jpg">
     <div>
       <h4>Bachelor Degree in Computer Science</h4>
       <h5>Sep 2010 - Jul 2014</h5>
       <h5>
         <a href="http://www.jiangnan.edu.cn/">Jiangnan University</a>, Wuxi, Jiangsu China
-    </h5>
-</div>
-</section>
+      </h5>
+    </div>
+  </section>
 
-<section class="sec-edu sec-content-s2">
+  <section class="sec-edu sec-content-s2">
     <img class="img-circle uni-hero" src="{{site.url}}/img/adeuni_logo.jpg">
     <div style="vertical-align: middle;">
       <h4>Master of Software Engineering</h4>
       <h5>Jul 2014 - Jul 2016</h5>
       <h5>
         <a href="http://www.adelaide.edu.au/">University of Adelaide</a>, Adelaide, SA Australia
-    </h5>
-</div>
-</section>
+      </h5>
+    </div>
+  </section>
 
 
-<!-- Employment-contract history -->
-<h1 class="sec-header">
+  <!-- Employment-contract history -->
+  <h1 class="sec-header">
     <i class="fa fa-briefcase" style="color: #aa8f66;" aria-hidden="true"></i> Employment-Contract History
-</h1>
-<hr>
+  </h1>
+  <hr>
 
-{% for i in (1..3) reversed%}
+  {% for i in (1..3) reversed%}
     {% include employment/employment_history_{{i}}.html employment_index=i %}
-{% endfor %}
+  {% endfor %}
 
 
-<!-- Degree related history -->
-
-<h1 class="sec-header">
+  <!-- Degree related history -->
+  <h1 class="sec-header">
     <i class="fa fa-certificate" style="color: #7f7caf;" aria-hidden="true"></i> Degree Related Project
-</h1>
-<hr>
+  </h1>
+  <hr>
 
-{% for i in (1..2) %}
+  {% for i in (1..2) %}
     {% include degree_project/degree_project_{{i}}.html degree_index=i %}
-{% endfor %}
+  {% endfor %}
 
 
-<!-- Skills stack -->
+  <!-- Awards & Achiements -->
 
-<h1 class="sec-header">
-  <i class="fa fa-trophy" style="color: #c9100e;" aria-hidden="true"></i> Awards & Achievements
-</h1>
-<hr>
+  <h1 class="sec-header">
+    <i class="fa fa-trophy" style="color: #c9100e;" aria-hidden="true"></i> Awards & Achievements
+  </h1>
+  <hr>
 
-<section class="sec-content-s1" style="display: inline-block;">
-  <div style="display: inline-block;">
-    <div> - Jan 2016, <a class="proj-link" href="http://www.data61.csiro.au/">Data61 Summer Scholarship</a></div>
-    <div> - Dec 2013, Second-rate Scholarship</div>
-    <div> - Dec 2012, Third-rate Scholarship</div>
-    <div> - Dec 2011, Third-rate Scholarships</div>
-  </div>
-</section>
-
-
-<!-- Skills stack -->
-
-<h1 class="sec-header"><i class="fa fa-cogs" style="color: #fbb132;" aria-hidden="true"></i> Skills Stack</h1>
-<hr>
+  <section class="sec-content-s1" style="display: inline-block;">
+    <div style="display: inline-block;">
+      <div> - Jan 2016, <a class="proj-link" href="http://www.data61.csiro.au/">Data61 Summer Scholarship</a></div>
+      <div> - Dec 2013, Second-rate Scholarship</div>
+      <div> - Dec 2012, Third-rate Scholarship</div>
+      <div> - Dec 2011, Third-rate Scholarships</div>
+    </div>
+  </section>
 
 
-<div>
-  <div class="sec-content-s1" style="display: inline-block;vertical-align: top;margin-right: 10px;">
-    <div><b>General Skills</b></div>
-    <div> - Java</div>
-    <div> - Javascript</div>
-    <div> - Python</div>
-    <div> - Ruby</div>
-</div>
-<div class="sec-content-s2" style="display: inline-block;vertical-align: top;margin-right: 10px;">
-    <div><b>Front-End</b></div>
-    <div> - HTML</div>
-    <div> - CSS</div>
-    <div> - SASS/LESS</div>
-    <div> - Bootstrap</div>
-    <div> - AngularJS</div>
-    <div> - Ember.js</div>
-    <div> - ReactJs</div>
-</div> 
-<div class="sec-content-s1" style="display: inline-block;vertical-align: top;margin-right: 10px;">
-    <div><b>Back-End</b></div>
-    <div> - PHP</div>
-    <div> - Node.js</div>
-    <div> - Nginx</div>
-    <div> - Django</div>
-    <div> - MySQL</div>
-    <div> - PostgreSQL</div>
-</div> 
-<div class="sec-content-s2" style="display: inline-block;vertical-align: top;">
-    <div><b>Other</b></div>
-    <div> - Agile</div>
-    <div> - Scrum</div>
-    <div> - SVN</div>
-    <div> - Git</div>
-    <div> - Docker</div>
-    <div> - Vagrant</div>
-</div>  
-</div>
+  <!-- Skills stack -->
+
+  <h1 class="sec-header"><i class="fa fa-cogs" style="color: #fbb132;" aria-hidden="true"></i> Skills Stack</h1>
+  <hr>
 
 
-<!-- Languages -->
-<h1 class="sec-header">
-  <i class="fa fa-language" style="color:#1d9d73;" aria-hidde="true"></i> Language
-</h1>
-<hr>
-
-<div class="sec-lang">
-  <img src="{{site.url}}/img/english.png">
-  <img src="{{site.url}}/img/mand.png">
-</div>
-
-
-<!-- Interests -->
-<h1 class="sec-header">
-  <i class="fa fa-paint-brush" style="color: #489fdf;" aria-hidden="true"></i> Interests
-</h1>
-<hr>
-
-<section class="sec-content-s2" style="display: inline-block;">
-  <div> - Running</div>
-  <div> - Cooking</div>
-  <div> - Traveling</div>
-  <div> - Online gaming</div>
-  <div> - Reading books</div>
-</section>
-
-
-<!-- Books -->
-<h1 class="sec-header">
-  Books I <i class="fa fa-heart animated infinite pulse" style="color: pink;" aria-hidden="true"></i>
-</h1>
-<hr>
-
-<div class="sec-books">
   <div>
-    <a href="https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude">  One Hundred Years of Solitude
-    </a>
-</div>
-<div>
-    <a href="https://en.wikipedia.org/wiki/The_Moon_and_Sixpence">
-      The Moon and Sixpence
-  </a>
-</div>
-</div>
+    <div class="sec-content-s1" style="display: inline-block;vertical-align: top;margin-right: 10px;">
+      <div><b>General Skills</b></div>
+      <div> - Java</div>
+      <div> - Javascript</div>
+      <div> - Python</div>
+      <div> - Ruby</div>
+    </div>
+    <div class="sec-content-s2" style="display: inline-block;vertical-align: top;margin-right: 10px;">
+        <div><b>Front-End</b></div>
+        <div> - HTML</div>
+        <div> - CSS</div>
+        <div> - SASS/LESS</div>
+        <div> - Bootstrap</div>
+        <div> - AngularJS</div>
+        <div> - Ember.js</div>
+        <div> - ReactJs</div>
+    </div> 
+    <div class="sec-content-s1" style="display: inline-block;vertical-align: top;margin-right: 10px;">
+        <div><b>Back-End</b></div>
+        <div> - PHP</div>
+        <div> - Node.js</div>
+        <div> - Nginx</div>
+        <div> - Django</div>
+        <div> - MySQL</div>
+        <div> - PostgreSQL</div>
+    </div> 
+    <div class="sec-content-s2" style="display: inline-block;vertical-align: top;">
+        <div><b>Other</b></div>
+        <div> - Agile</div>
+        <div> - Scrum</div>
+        <div> - SVN</div>
+        <div> - Git</div>
+        <div> - Docker</div>
+        <div> - Vagrant</div>
+    </div>  
+  </div>
 
-</div>
 
+  <!-- Languages -->
+  <h1 class="sec-header">
+    <i class="fa fa-language" style="color:#1d9d73;" aria-hidde="true"></i> Language
+  </h1>
+  <hr>
+
+  <div class="sec-lang">
+    <img src="{{site.url}}/img/english.png">
+    <img src="{{site.url}}/img/mand.png">
+  </div>
+
+
+  <!-- Interests -->
+  <h1 class="sec-header">
+    <i class="fa fa-paint-brush" style="color: #489fdf;" aria-hidden="true"></i> Interests
+  </h1>
+  <hr>
+
+  <section class="sec-content-s2" style="display: inline-block;">
+    <div> - Running</div>
+    <div> - Cooking</div>
+    <div> - Traveling</div>
+    <div> - Online gaming</div>
+    <div> - Reading books</div>
+  </section>
+
+
+  <!-- Books -->
+  <h1 class="sec-header">
+    Books I <i class="fa fa-heart animated infinite pulse" style="color: pink;" aria-hidden="true"></i>
+  </h1>
+  <hr>
+
+  <div class="sec-books">
+    <div>
+      <a href="https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude">  
+        One Hundred Years of Solitude
+      </a>
+    </div>
+    <div>
+      <a href="https://en.wikipedia.org/wiki/The_Moon_and_Sixpence">
+        The Moon and Sixpence
+      </a>
+    </div>
+  </div>
+</div>
