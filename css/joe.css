@@ -9,6 +9,13 @@
 	text-shadow: 2px 2px 9px rgba(0, 37, 97, 0.2);
 
 }
+.active-icon {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #5ACE24;
+	display: inline-block;
+}
 .skill-content{
 	display: inline-block;
 	margin-bottom: 20px;
@@ -39,7 +46,7 @@
 	padding: 1px 15px 1px 15px;
 }
 .sec-content-s1{
-	background-color: #cbdbff;
+	background-color: rgba(166, 240, 255, 0.65);
 	border-radius: 5px;
 	padding: 6px 10px 6px 15px;
 	margin-bottom: 20px;
@@ -49,7 +56,7 @@
 	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
 }
 .sec-content-s2{
-	background-color: #cbdbff;
+	background-color: rgba(166, 240, 255, 0.65);
 	border-radius: 5px;
 	padding: 6px 10px 6px 15px;
 	margin-bottom: 20px;
@@ -59,22 +66,22 @@
 	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
 }
 .sec-content-s3{
-	background-color: rgba(248, 0, 111, 0.8);
+	background-color: rgba(166, 240, 255, 0.65);
 	border-radius: 5px;
 	padding: 6px 10px 6px 15px;
 	margin-bottom: 20px;
-	color: white;
+	color: #002561;
 /*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
 }
-.sec-content-s3 .proj-link {
+/*.sec-content-s3 .proj-link {
 	color: #fff !important;
 	text-decoration: underline;
 }
 .sec-content-s3 a {
 	color: #fff !important;
-}
+}*/
 .sec-edu > .uni-hero{
 	width: 120px;
 	height: 120px;
