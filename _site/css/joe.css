@@ -9,8 +9,37 @@
 	text-shadow: 2px 2px 9px rgba(0, 37, 97, 0.2);
 
 }
+.skill-content{
+	display: inline-block;
+	margin-bottom: 20px;
+	line-height: 2;
+}
+.skill-content .skill-item {
+	display: inline-block;
+}
+.skill-content .skill-item:not(:last-child):after {
+	content: ',';
+}
+.skill-content .skill-item .skill-icon {
+	height: 35px;
+}
+.skill-content .skill-type{
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+	color: #002561;
+	border: 1px solid black;
+/*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);	*/
+	background-color: #545E75;
+	color: white;
+	font-weight: 800;
+	border-radius: 5px;
+	padding: 1px 15px 1px 15px;
+}
 .sec-content-s1{
-	background-color: #b9ebff;
+	background-color: #cbdbff;
 	border-radius: 10px;
 	padding: 6px 10px 6px 15px;
 	margin-bottom: 20px;
