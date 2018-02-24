@@ -1,7 +1,7 @@
 .sec-icon{
-	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+/*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
-	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
 }
 .sec-header{
 	margin-top: 20px;
@@ -40,33 +40,33 @@
 }
 .sec-content-s1{
 	background-color: #cbdbff;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 6px 10px 6px 15px;
 	margin-bottom: 20px;
 	color: #002561;
-	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+/*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
-	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
 }
 .sec-content-s2{
 	background-color: #cbdbff;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 6px 10px 6px 15px;
 	margin-bottom: 20px;
 	color: #002561;
-	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+/*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
-	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
 }
 .sec-content-s3{
 	background-color: rgba(248, 0, 111, 0.8);
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 6px 10px 6px 15px;
 	margin-bottom: 20px;
 	color: white;
-	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+/*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
-	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
 }
 .sec-content-s3 .proj-link {
 	color: #fff !important;
