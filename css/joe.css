@@ -28,7 +28,7 @@
 	content: ',';
 }
 .skill-content .skill-item .skill-icon {
-	height: 35px;
+	height: 25px;
 }
 .skill-content .skill-type{
 	display: inline-block;
@@ -145,12 +145,11 @@
 	border-color: #875baf;
 	color: white !important;
 }
-/*// .proj-link{
-// text-decoration: none;
-// 	color: blue;
-// 	transition: all .4s ease-in;
-// }
-// .proj-link:hover{
-// 	text-decoration: none;
-// 	color: #ca2e55;
-// }*/
+.proj-link{
+text-decoration: none;
+	transition: all .1s ease-in;
+}
+.proj-link:hover{
+	text-decoration: underline;
+	color: #ff1650;
+}
