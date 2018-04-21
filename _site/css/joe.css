@@ -153,3 +153,17 @@ text-decoration: none;
 	text-decoration: underline;
 	color: #ff1650;
 }
+
+#melody-btn{
+  border: none;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px 45px 10px 45px;
+  transition: all .1s ease-in;
+}
+
+#random-list {
+  margin-top: 20px;
+  font-size: 20px;
+}
