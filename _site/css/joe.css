@@ -165,5 +165,11 @@ text-decoration: none;
 
 #random-list {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 40px;
 }
+
+.random-item {
+  background-color: #9c27b0 !important;
+  color: white !important;
+}
+

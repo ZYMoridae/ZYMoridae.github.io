@@ -231,4 +231,7 @@ $('#melody-btn').click(function(){
   todayMelodyList.forEach(item => {
     $('#random-list').append(`<li>${item}</li>`)
   });
+  $('#random-list li').click(function(){
+    $(this).toggleClass('random-item');
+  });
 });
