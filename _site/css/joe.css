@@ -6,7 +6,7 @@
 .sec-header{
 	margin-top: 20px;
   color: darkgray;
-  font-weight: 300 !important;
+  /* font-weight: 400 !important; */
   font-size: 30px;
 	/* text-shadow: 2px 2px 9px rgba(0, 37, 97, 0.2); */
 }
