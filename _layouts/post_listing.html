@@ -8,7 +8,6 @@ layout: default
   <h1 class="sec-header" style="margin-top: 0px;">
     <i class="fa fa-archive" aria-hidden="true"></i> Portfolio
   </h1>
-  <hr>
 
   <div>
     {% assign link_address = "https://zymoridae.github.io/, https://app.sweat.com/, https://forum.sweat.com/, http://crest-centre.net/, https://zymoridae.github.io/wst_edu.html, https://zymoridae.github.io/mwa.html, https://zymoridae.github.io/msep.html" | split: ", " %}
@@ -38,7 +37,6 @@ layout: default
   <h1 class="sec-header">
       <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education
   </h1>
-  <hr>
 
   <section class="sec-edu sec-content-s1">
     <img class="img-circle uni-hero" src="{{site.url}}/img/jnuni_logo.jpg">
@@ -67,36 +65,37 @@ layout: default
   <h1 class="sec-header">
     <i class="fa fa-briefcase" style="color: #aa8f66;" aria-hidden="true"></i> Employment-Contract History
   </h1>
-  <hr>
 
-  {% for i in (1..4) reversed%}
-    {% include employment/employment_history_{{i}}.html employment_index=i %}
-  {% endfor %}
+  <div class="sec-container">
+    {% for i in (1..4) reversed%}
+      {% include employment/employment_history_{{i}}.html employment_index=i %}
+    {% endfor %}
+  </div>
 
 
   <!-- Degree related history -->
   <h1 class="sec-header">
     <i class="fa fa-certificate" aria-hidden="true"></i> Degree Related Project
   </h1>
-  <hr>
 
-  {% for i in (1..2) %}
-    {% include degree_project/degree_project_{{i}}.html degree_index=i %}
-  {% endfor %}
+  <div class="sec-container">
+    {% for i in (1..2) %}
+      {% include degree_project/degree_project_{{i}}.html degree_index=i %}
+    {% endfor %}
+  </div>
 
 
   <!-- Awards & Achiements -->
   <h1 class="sec-header">
     <i class="fa fa-trophy" aria-hidden="true"></i> Awards & Achievements
   </h1>
-  <hr>
 
   <section class="sec-content-s1" style="display: inline-block;">
     <div style="display: inline-block;">
-      <div>Jan 2016, <a class="proj-link" href="http://www.data61.csiro.au/">Data61 Summer Scholarship</a></div>
-      <div>Dec 2013, Second-rate Scholarship</div>
-      <div>Dec 2012, Third-rate Scholarship</div>
-      <div>Dec 2011, Third-rate Scholarships</div>
+      <div class="award-item">Jan 2016, <a class="proj-link" href="http://www.data61.csiro.au/">Data61 Summer Scholarship</a></div>
+      <div class="award-item">Dec 2013, Second-rate Scholarship</div>
+      <div class="award-item">Dec 2012, Third-rate Scholarship</div>
+      <div class="award-item">Dec 2011, Third-rate Scholarships</div>
     </div>
   </section>
 
@@ -107,7 +106,6 @@ layout: default
     <i class="fa fa-cogs" aria-hidden="true">    
     </i> Skills Stack
   </h1>
-  <hr>
 
   <div>
     <div style="vertical-align: top;margin-right: 10px;">
@@ -116,32 +114,44 @@ layout: default
           Front-End
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png"/>
+          <!-- <img class="skill-icon" src="https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png"/> -->
           HTML 
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://cdn.worldvectorlogo.com/logos/css-3.svg"/>
-          CSS ( <img class="skill-icon" src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" style="height: 25px;"/>SASS / <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LESS_Logo.svg/1200px-LESS_Logo.svg.png"/ style="height: 25px;">LESS, <img class="skill-icon" src="http://marketplace.intelledox.com/wp-content/uploads/edd/2017/01/Bootstrap.png"/>Bootstrap)
+          <!-- <img class="skill-icon" src="https://cdn.worldvectorlogo.com/logos/css-3.svg"/> -->
+          CSS ( 
+          <!-- <img class="skill-icon" src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" style="height: 25px;"/> -->
+          SASS / 
+          <!-- <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LESS_Logo.svg/1200px-LESS_Logo.svg.png"/ style="height: 25px;"> -->
+          LESS, 
+          <!-- <img class="skill-icon" src="http://marketplace.intelledox.com/wp-content/uploads/edd/2017/01/Bootstrap.png"/> -->
+          Bootstrap)
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/6/69/Ember.js_Logo_and_Mascot.png"/>
+          <!-- <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/6/69/Ember.js_Logo_and_Mascot.png"/> -->
           Ember.js
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png"/>
-          React.js + <img class="skill-icon" src="https://cdn.zapier.com/storage/blog/4ec8fc7dc3a75758a3913bab9e5a4fd8_2.500x278.png"/>Redux
+          <!-- <img class="skill-icon" src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1198519/reactjs.png"/> -->
+          React.js + 
+          <!-- <img class="skill-icon" src="https://cdn.zapier.com/storage/blog/4ec8fc7dc3a75758a3913bab9e5a4fd8_2.500x278.png"/> -->
+          Redux
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://camo.githubusercontent.com/d3afdfc8b8075b9daf5109c4af7b8b07ab2d7c04/68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667"/> Jasmine
+          <!-- <img class="skill-icon" src="https://camo.githubusercontent.com/d3afdfc8b8075b9daf5109c4af7b8b07ab2d7c04/68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667"/>  -->
+          Jasmine
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://camo.githubusercontent.com/af4bf83ab2ca125346740f9961345a24ec43b3a9/68747470733a2f2f636c6475702e636f6d2f78465646784f696f41552e737667"/> Mocha.js
+          <!-- <img class="skill-icon" src="https://camo.githubusercontent.com/af4bf83ab2ca125346740f9961345a24ec43b3a9/68747470733a2f2f636c6475702e636f6d2f78465646784f696f41552e737667"/>  -->
+          Mocha.js
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://avatars3.githubusercontent.com/u/6570253?s=400&v=4"/> Sinon.js
+          <!-- <img class="skill-icon" src="https://avatars3.githubusercontent.com/u/6570253?s=400&v=4"/>  -->
+          Sinon.js
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="http://www.codeconquest.com/wp-content/uploads/jQuery-logo.jpg"/> jQuery
+          <!-- <img class="skill-icon" src="http://www.codeconquest.com/wp-content/uploads/jQuery-logo.jpg"/>  -->
+          jQuery
         </div>
       </div>
     </div> 
@@ -151,35 +161,43 @@ layout: default
           Back-End
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="http://www.vizteams.com/wp-content/uploads/2013/08/python-logo-master.png"/> Python ( <img class="skill-icon" src="https://automationpanda.files.wordpress.com/2017/09/django-logo-negative.png?w=620" style="height: 25px;"/> Django)
+          <!-- <img class="skill-icon" src="http://www.vizteams.com/wp-content/uploads/2013/08/python-logo-master.png"/>  -->
+          Python ( 
+            <!-- <img class="skill-icon" src="https://automationpanda.files.wordpress.com/2017/09/django-logo-negative.png?w=620" style="height: 25px;"/>  -->
+          Django)
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://www.easyredmine.com/images/articles/p14/f2596/logo.png"/> Ruby ( <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png" style="height: 25px;"/> Ruby on Rails)
+          <!-- <img class="skill-icon" src="https://www.easyredmine.com/images/articles/p14/f2596/logo.png"/>  -->
+          Ruby ( 
+            <!-- <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png" style="height: 25px;"/>  -->
+            Ruby on Rails)
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://images.sftcdn.net/images/t_optimized,f_auto/p/2f4c04f4-96d0-11e6-9830-00163ed833e7/3163796423/java-runtime-environment-logo.png"/>
+          <!-- <img class="skill-icon" src="https://images.sftcdn.net/images/t_optimized,f_auto/p/2f4c04f4-96d0-11e6-9830-00163ed833e7/3163796423/java-runtime-environment-logo.png"/> -->
           Java
         </div>
-        <div class="skill-item"><img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2000px-PHP-logo.svg.png" style="height: 25px;"/>
+        <div class="skill-item">
+          <!-- <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2000px-PHP-logo.svg.png" style="height: 25px;"/> -->
           PHP
-          (<img class="skill-icon" src="https://geeksperhour.com/wp-content/uploads/2014/11/Hire_Laravel_Developer.jpg"/>
+          (
+            <!-- <img class="skill-icon" src="https://geeksperhour.com/wp-content/uploads/2014/11/Hire_Laravel_Developer.jpg"/> -->
           Laravel
           )
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://www.abeautifulsite.net/uploads/2016/04/nodejs.png?width=600&key=e29b3acd7da48dbe62199ba284591dc6e8abd8cb9ce286f5cf89b53a494a9b39"/>
+          <!-- <img class="skill-icon" src="https://www.abeautifulsite.net/uploads/2016/04/nodejs.png?width=600&key=e29b3acd7da48dbe62199ba284591dc6e8abd8cb9ce286f5cf89b53a494a9b39"/> -->
           Node.js
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="http://www.techietown.info/wp-content/uploads/2017/03/enable-nginx-debug-logging.png"/>
+          <!-- <img class="skill-icon" src="http://www.techietown.info/wp-content/uploads/2017/03/enable-nginx-debug-logging.png"/> -->
           Nginx
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png" style="height: 20px;"/>
+          <!-- <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png" style="height: 20px;"/> -->
           MySQL
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://www.fullstackpython.com/img/logos/postgresql.jpg"/>
+          <!-- <img class="skill-icon" src="https://www.fullstackpython.com/img/logos/postgresql.jpg"/> -->
           PostgreSQL
         </div>
       </div>
@@ -190,26 +208,31 @@ layout: default
           Other
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://static.wixstatic.com/media/2ac807_3b721eadef1d43ce9c25163a8fe4bd95~mv2.png/v1/fill/w_179,h_179,al_c,usm_0.66_1.00_0.01/2ac807_3b721eadef1d43ce9c25163a8fe4bd95~mv2.png"/>
+          <!-- <img class="skill-icon" src="https://static.wixstatic.com/media/2ac807_3b721eadef1d43ce9c25163a8fe4bd95~mv2.png/v1/fill/w_179,h_179,al_c,usm_0.66_1.00_0.01/2ac807_3b721eadef1d43ce9c25163a8fe4bd95~mv2.png"/> -->
+          Agile
           <!-- Agile -->
         </div>
         <div class="skill-item">
           Scrum
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Subversion_Logo.svg/1200px-Subversion_Logo.svg.png" style="height: 25px;"/>
+          <!-- <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Subversion_Logo.svg/1200px-Subversion_Logo.svg.png" style="height: 25px;"/> -->
+          SVN
           <!-- SVN -->
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png" style="height: 25px;"/>
+          <!-- <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png" style="height: 25px;"/> -->
+          Git
           <!-- Git -->
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="https://tr4.cbsistatic.com/hub/i/r/2016/10/18/831f017c-ee68-4bd6-8a5c-ab31b4d35d6d/resize/770x/1cedcf2f03388a9720835a628a8a9765/dockerhero.jpg"/>
+          <!-- <img class="skill-icon" src="https://tr4.cbsistatic.com/hub/i/r/2016/10/18/831f017c-ee68-4bd6-8a5c-ab31b4d35d6d/resize/770x/1cedcf2f03388a9720835a628a8a9765/dockerhero.jpg"/> -->
+          Docker
           <!-- Docker -->
         </div>
         <div class="skill-item">
-          <img class="skill-icon" src="http://tech.osteel.me/images/2015/01/25/vagrant.png" style="height: 25px;"/>
+          <!-- <img class="skill-icon" src="http://tech.osteel.me/images/2015/01/25/vagrant.png" style="height: 25px;"/> -->
+          Vagrant
           <!-- Vagrant -->
         </div>
       </div>
@@ -221,11 +244,17 @@ layout: default
   <h1 class="sec-header">
     <i class="fa fa-language" aria-hidde="true"></i> Language
   </h1>
-  <hr>
 
   <div class="sec-lang">
-    <img src="{{site.url}}/img/english.png">
-    <img src="{{site.url}}/img/mand.png">
+    <div class="lang-item">
+      Mandarin
+    </div>
+    <div class="lang-item">
+      English
+    </div>
+
+    <!-- <img src="{{site.url}}/img/english.png"> -->
+    <!-- <img src="{{site.url}}/img/mand.png"> -->
   </div>
 
 
@@ -233,14 +262,13 @@ layout: default
   <h1 class="sec-header">
     <i class="fa fa-paint-brush" aria-hidden="true"></i> Hobbies
   </h1>
-  <hr>
 
   <section class="sec-content-s2" style="display: inline-block;">
-    <div>Running</div>
-    <div>Cooking</div>
-    <div>Traveling</div>
-    <div>Online gaming</div>
-    <div>Reading books</div>
+    <div class="hobby-item">Running</div>
+    <div class="hobby-item">Cooking</div>
+    <div class="hobby-item">Traveling</div>
+    <div class="hobby-item">Online gaming</div>
+    <div class="hobby-item">Reading books</div>
   </section>
 
 
@@ -248,18 +276,17 @@ layout: default
   <h1 class="sec-header">
     Books I <i class="fa fa-heart animated infinite pulse" aria-hidden="true"></i>
   </h1>
-  <hr>
 
   <div class="sec-books">
     <div>
-      <a target="_blank" href="https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude">  
+      <!-- <a target="_blank" href="https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude">   -->
         One Hundred Years of Solitude
-      </a>
+      <!-- </a> -->
     </div>
     <div>
-      <a target="_blank" href="https://en.wikipedia.org/wiki/The_Moon_and_Sixpence">
+      <!-- <a target="_blank" href="https://en.wikipedia.org/wiki/The_Moon_and_Sixpence"> -->
         The Moon and Sixpence
-      </a>
+      <!-- </a> -->
     </div>
   </div>
 </div>

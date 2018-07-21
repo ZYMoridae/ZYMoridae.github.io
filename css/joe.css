@@ -5,9 +5,12 @@
 }
 .sec-header{
 	margin-top: 20px;
-  color: darkgray;
-  /* font-weight: 400 !important; */
-  font-size: 30px;
+  color: gray;
+  font-weight: 400 !important;
+  font-size: 22px;
+  border-bottom: 1px solid;
+  border-color: #dedede;
+  padding-bottom: 10px;
 	/* text-shadow: 2px 2px 9px rgba(0, 37, 97, 0.2); */
 }
 .active-icon {
@@ -23,35 +26,46 @@
 	line-height: 2;
 }
 .skill-content .skill-item {
-	display: inline-block;
+  display: inline-block;
+  color: white;
+  background-color:  #7eb0db;
+  border-color: #357ebd !important;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 0px 5px;
 }
 .skill-content .skill-item:not(:last-child):after {
-	content: ',';
+	/* content: ','; */
 }
 .skill-content .skill-item .skill-icon {
 	height: 25px;
 }
 .skill-content .skill-type{
 	display: inline-block;
-	text-align: center;
+	text-align: left;
 	width: 100px;
 	color: #002561;
 	/*border: 1px solid black;*/
 /*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);	*/
-	background-color: gray;
-	color: white;
+	/* background-color: gray; */
+	color: black;
 	font-weight: 800;
-	border-radius: 25px;
+	/* border-radius: 25px; */
 	padding: 1px 15px 1px 15px;
 }
-.sec-content-common {
+.sec-content-common{
 	/* background-color: rgba(166, 240, 255, 0.65); */
 	/* border-radius: 5px; */
 	padding: 10px 15px 10px 15px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
   color: #002561;
+
+}
+.sec-container > section:not(:last-child) {
   border-color: #dedede !important;
   border-bottom: 1px solid;
 }
@@ -102,9 +116,12 @@
 .sec-content-s3 a {
 	color: #fff !important;
 }*/
-.post-listing {
-  padding: 50px 60px 50px 50px;
+.award-item {
+  margin-bottom: 5px;
 }
+/* .post-listing {
+  padding: 50px 60px 50px 50px;
+} */
 .sec-edu > .uni-hero{
 	width: 120px;
 	height: 120px;
@@ -128,13 +145,35 @@
 	color: #ca2e55;
 }
 .sec-lang img{
-	width: 64px; 
-	height: 32px; 
+	width: 48px; 
+	height: 32px;
 	display: inline-block; 
 	border-radius: 5px;
 	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
 	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+}
+.sec-lang .lang-item {
+  display: inline-block;
+  color: white;
+  background-color:  #7eb0db;
+  border-color: #357ebd !important;
+  border: 1px solid;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+.hobby-item {
+  display: inline-block;
+  color: white;
+  background-color:  #7eb0db;
+  border-color: #357ebd !important;
+  border: 1px solid;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  padding: 3px 10px;
 }
 .sec-skills div{
 	padding: 2px 5px 2px 5px;
@@ -151,8 +190,17 @@
 	border-radius: 5px;
 	color: black;
 }
-.sec-books div a{
-	color: #002561;
+.sec-books div{
+  /* color: #002561; */
+  display: inline-block;
+  color: white;
+  background-color:  #7eb0db;
+  border-color: #357ebd !important;
+  border: 1px solid;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border-radius: 5px;
+  padding: 3px 10px;
 }
 .res-btn {
 	border-radius: 5px;
@@ -169,7 +217,7 @@
 	color: white !important;
 }
 .proj-link{
-text-decoration: none;
+  text-decoration: none;
 	transition: all .1s ease-in;
 }
 .proj-link:hover{
