@@ -5,9 +5,9 @@
 }
 .sec-header{
 	margin-top: 20px;
-	color: #002561;
-	text-shadow: 2px 2px 9px rgba(0, 37, 97, 0.2);
-
+  color: #002561;
+  font-weight: 300 !important;
+	/* text-shadow: 2px 2px 9px rgba(0, 37, 97, 0.2); */
 }
 .active-icon {
 	width: 10px;
@@ -48,7 +48,7 @@
 .sec-content-s1{
 	background-color: rgba(166, 240, 255, 0.65);
 	border-radius: 5px;
-	padding: 6px 10px 20px 15px;
+	padding: 6px 10px 10px 15px;
 	margin-bottom: 20px;
 	color: #002561;
 /*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
@@ -66,6 +66,16 @@
 	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
 }
 .sec-content-s3{
+	background-color: rgba(166, 240, 255, 0.65);
+	border-radius: 5px;
+	padding: 6px 10px 20px 15px;
+	margin-bottom: 20px;
+	color: #002561;
+/*	-webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	-moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);
+	box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.19);*/
+}
+.sec-content-s4{
 	background-color: rgba(166, 240, 255, 0.65);
 	border-radius: 5px;
 	padding: 6px 10px 20px 15px;
@@ -165,11 +175,12 @@ text-decoration: none;
 
 #random-list {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .random-item {
-  background-color: #9c27b0 !important;
+  transition: all .5s ease-in;
+  background-color: #c355d6 !important;
   color: white !important;
 }
 
